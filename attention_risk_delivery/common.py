@@ -18,6 +18,7 @@ def first_existing_path(*candidates: Path) -> Path:
 
 
 ROOT_DIR = DELIVERY_DIR.parent
+HANDOVER_DIR = ROOT_DIR
 
 DEFAULT_MODEL_NAME = "attentionrnn_Dv132_Full_001"
 DEFAULT_MODEL_PATH = first_existing_path(
