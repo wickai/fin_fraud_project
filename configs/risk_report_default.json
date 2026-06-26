@@ -1,0 +1,21 @@
+{
+  "model_name": "tabpfnv3_Dv132_Full_001",
+  "data_path": "data/input/fraud-sent-v1.3.2-processed.csv",
+  "sw_path": "data/input/db_data/ReferenceCompanyAlignedData_with_sw.csv",
+  "reference_db_path": "data/input/db_data/ReferenceCompanyAlignedData_with_sw.csv",
+  "formula_dict_path": "data/input/db_data/公式字典.csv",
+  "financial_dict_path": "data/input/db_data/财务报表字典表.csv",
+  "device": "cuda",
+  "output_root": "data/output/risk_report_runs",
+  "explainer": "ablation",
+  "background_strategy": "sw_industry",
+  "background_level": 2,
+  "background_size": 100,
+  "reference_statistic": "median",
+  "nsamples": 200,
+  "max_evals": 305,
+  "top_row_count": 0,
+  "min_year": 2021,
+  "max_year": 2025,
+  "sw_min_peer_count": 10
+}

@@ -1,0 +1,64 @@
+{
+  "input_support_files": [
+    {
+      "purpose": "预测源数据",
+      "historical_source": "scripts/predict_full_2024_2025_with_tabpfn_v132_full_train.py:DATA_PATH",
+      "local_copy_path": "data/input/fraud-sent-v1.3.2-processed.csv"
+    },
+    {
+      "purpose": "风险报告同行基线",
+      "historical_source": "portable_pipeline_studio/src/build_top10_risk_reports.py:DEFAULT_DB_PATH",
+      "local_copy_path": "data/input/db_data/ReferenceCompanyAlignedData_with_sw.csv"
+    },
+    {
+      "purpose": "财报字段字典",
+      "historical_source": "portable_pipeline_studio/src/build_top10_risk_reports.py:DEFAULT_DICT_PATH",
+      "local_copy_path": "data/input/db_data/财务报表字典表.csv"
+    },
+    {
+      "purpose": "指标公式字典",
+      "historical_source": "predict_scripts/core.py:DEFAULT_FORMULA_PATH",
+      "local_copy_path": "data/input/db_data/公式字典.csv"
+    },
+    {
+      "purpose": "旧版公式解析脚本",
+      "historical_source": "portable_pipeline_studio/data/src_old/enrich_financial_indicator_formulas.py",
+      "local_copy_path": "vendor/portable_pipeline_studio/data/src_old/enrich_financial_indicator_formulas.py"
+    },
+    {
+      "purpose": "AttentionRNN 对齐校验用旧版输入",
+      "historical_source": "from_xiang/data.csv",
+      "local_copy_path": "data/input/attentionrnn/from_xiang_data.csv"
+    }
+  ],
+  "vendored_code": [
+    "vendor/predict_scripts/",
+    "vendor/src/fraud_ml/",
+    "vendor/portable_pipeline_studio/src/"
+  ],
+  "model_artifacts": [
+    {
+      "model_name": "tabpfnv3_Dv132_Full_001",
+      "local_copy_dir": "data/input/models/output_v132_backtest_2024_tabpfn_v3_2015_2025_native_missing_full_train_re",
+      "required_files": [
+        "model_metadata.joblib",
+        "model.tabpfn_fit"
+      ]
+    },
+    {
+      "model_name": "tabpfnv3_Dv131_Full_002",
+      "local_copy_dir": "data/input/models/output_v131_backtest_2024_tabpfn_v3_2015_2025_native_missing_full_train",
+      "required_files": [
+        "model_metadata.joblib",
+        "model.tabpfn_fit"
+      ]
+    },
+    {
+      "model_name": "attentionrnn_Dv132_Full_001",
+      "local_copy_dir": "data/input/models_attention/attentionrnn",
+      "required_files": [
+        "attentionrnn.pkl"
+      ]
+    }
+  ]
+}

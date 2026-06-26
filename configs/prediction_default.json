@@ -1,0 +1,9 @@
+{
+  "model_name": "tabpfnv3_Dv132_Full_001",
+  "data_path": "data/input/fraud-sent-v1.3.2-processed.csv",
+  "start_year": 2024,
+  "end_year": 2025,
+  "device": "cuda",
+  "output_root": "data/output/predict_results",
+  "write_input_snapshot": true
+}

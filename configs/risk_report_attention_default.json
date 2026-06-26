@@ -1,0 +1,23 @@
+{
+  "mode": "single",
+  "model_name": "attentionrnn_Dv132_Full_001",
+  "model_path": "engineering_handover/data/input/models_attention/attentionrnn/attentionrnn.pkl",
+  "data_path": "engineering_handover/data/input/fraud-sent-v1.3.2-processed.csv",
+  "legacy_data_path": "engineering_handover/data/input/attentionrnn/from_xiang_data.csv",
+  "reference_db_path": "engineering_handover/data/input/db_data/ReferenceCompanyAlignedData_with_sw.csv",
+  "formula_dict_path": "engineering_handover/data/input/db_data/公式字典.csv",
+  "financial_dict_path": "engineering_handover/data/input/db_data/财务报表字典表.csv",
+  "output_root": "engineering_handover/data/output/risk_report_runs_minimal_attention",
+  "device": "cpu",
+  "explainer": "ablation",
+  "background_strategy": "sw_industry",
+  "background_level": 2,
+  "background_size": 100,
+  "reference_statistic": "median",
+  "nsamples": 200,
+  "max_evals": 305,
+  "min_year": 2021,
+  "max_year": 2025,
+  "sw_min_peer_count": 10,
+  "validate_alignment": true
+}
