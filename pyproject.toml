@@ -6,10 +6,12 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "markdown-it-py>=4.2.0",
+    "matplotlib>=3.11.0",
     "numba>=0.59",
     "numpy>=2.4.6",
     "openpyxl>=3.1.5",
     "pandas>=3.0.3",
+    "plotly>=6.8.0",
     "reportlab>=5.0.0",
     "scikit-learn>=1.9.0",
     "shap>=0.46",
@@ -17,11 +19,14 @@ dependencies = [
 ]
 
 [[tool.uv.index]]
-url = "https://mirrors.aliyun.com/pypi/simple"
-default = true
+# url = "https://mirrors.aliyun.com/pypi/simple"
+# default = true
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 
 [[tool.uv.index]]
 url = "https://pypi.org/simple"
 
 [[tool.uv.index]]
-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+url = "https://mirrors.aliyun.com/pypi/simple"
+default = true
+# url = "https://pypi.tuna.tsinghua.edu.cn/simple"

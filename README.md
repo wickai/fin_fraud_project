@@ -147,3 +147,11 @@ uv run python engineering_handover/pipelines/risk_report_pipeline.py --stkcd 600
 3. `configs/support_files.json`
 4. `pipelines/prediction_pipeline.py`
 5. `pipelines/risk_report_pipeline.py`
+
+
+# v22版本刷v1.3.2数据
+uv run python attention_risk_delivery/run_attention_risk_index_only.py --data-path /data/wk/code/github/fin_fraud_project/data/input/fraud-sent-v1.3.2-processed.csv --output-dir /data/wk/code/github/fin_fraud_project/data/output/attention_risk_delivery_re/attentionrnn_Dv132_Full_001/risk_index_only_v132 --output-stem attentionrnn_v132_财务报告风险指数
+
+
+# v22版本刷v1.3.2.1数据
+uv run python attention_risk_delivery/run_attention_risk_index_only.py --data-path /data/wk/code/github/fin_fraud_project/data/input/fraud-sent-v1.3.2-processed.csv --output-dir /data/wk/code/github/fin_fraud_project/data/output/attention_risk_delivery_re/attentionrnn_Dv132_Full_001/risk_index_only_v132 --output-stem attentionrnn_v132_财务报告风险指数
